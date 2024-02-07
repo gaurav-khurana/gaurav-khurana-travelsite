@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+:root {
+  --color-background-primary: #fefaf5;
+  --color-background-secondary: #ffffff;
+  --font-color-primary: #335576;
+  --font-color-secondary: #db7a4e;
+  --border-radius: 5px;
+}
+/* COLOR SCHEME GUIDELINE
+#FEFAF5 - bkgrnd footer, bkgrnd hero, bkgrnd activities -color-bkgrnd-primary
+#FFFFFF - nav bkgrnd -color-bkgrnd-second
+#335576 - nav logo, slogan color, footer titles +text, recomendation title --font-primary
+#DB7A4E - nav active page, footer subtitles, get started button, -font-second
+ */
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
