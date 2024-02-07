@@ -9,19 +9,19 @@
   </head>
   <body>
     <header>
-      <nav>
-        <ul>
-          <li>Travel Site</li>
-          <li>Home</li>
-          <li>Hawaii</li>
-          <li>Iceland</li>
-          <li>Greece</li>
+      <nav class="navbar">
+        <ul class="navbar__list">
+          <li class="navbar__list">Travel Site</li>
+          <li class="navbar__list">Home</li>
+          <li class="navbar__list">Hawaii</li>
+          <li class="navbar__list">Iceland</li>
+          <li class="navbar__list">Greece</li>
         </ul>
       </nav>
     </header>
 
-    <main>
-      <h1>Greece</h1>
+    <main class="destination-card">
+      <h1 class="destination-card__heading">Greece</h1>
       <section>
         <article>
           <ul>
@@ -53,46 +53,70 @@
       </section>
     </main>
 
-    <footer>
-      <article>
-        <h3>Contact</h3>
-        <p>EMAIL</p>
-        <p>info@travelsite.com</p>
+    <footer class="footer">
+      <article class="footer__card">
+        <h3 class="footer__heading">Contact</h3>
+        <p class="footer__text footer__text--title">EMAIL</p>
+        <p class="footer__text footer__text--sub-title">info@travelsite.com</p>
       </article>
-      <article>
-        <h3>Hours</h3>
-        <div>
+
+      <article class="footer__card">
+        <h3 class="footer__heading">Hours</h3>
+        <div class="footer__text-container">
           <div>
-            <p>MONDAY - FRIDAY</p>
-            <p>9:00 AM - 5:00 PM</p>
+            <p class="footer__text footer__text--title">MONDAY - FRIDAY</p>
+            <p class="footer__text footer__text--sub-title">
+              9:00 AM - 5:00 PM
+            </p>
           </div>
           <div>
-            <p>SATURDAY</p>
-            <p>10:00 AM - 4:00 PM</p>
+            <p class="footer__text footer__text--title">SATURDAY</p>
+            <p class="footer__text footer__text--sub-title">
+              10:00 AM - 4:00 PM
+            </p>
           </div>
           <div>
-            <p>SUNDAY</p>
-            <p>Closed</p>
+            <p class="footer__text footer__text--title">SUNDAY</p>
+            <p class="footer__text footer__text--sub-title">Closed</p>
           </div>
         </div>
       </article>
-      <article>
-        <h3>Social</h3>
-        <div>
-          <a href="https://www.instagram.com/" target="_blank">
+
+      <article class="footer__card">
+        <h3 class="footer__heading">Social</h3>
+        <div class="footer__link-container">
+          <a
+            class="footer__link"
+            href="https://www.instagram.com/"
+            target="_blank"
+          >
             <img
+              class="footer__image"
               src="../assets/icons/icon-instagram.png"
               alt="Instagram icon-instagram"
             />
           </a>
-          <a href="https://www.facebook.com/" target="_blank">
+          <a
+            class="footer__link"
+            href="https://www.facebook.com/"
+            target="_blank"
+          >
             <img
+              class="footer__image"
               src="../assets/icons/icon-facebook.png"
               alt="Facebook icon-facebook"
             />
           </a>
-          <a href="https://twitter.com/?lang=en" target="_blank">
-            <img src="../assets/icons/icon-twitter.png" alt="Twitter icon" />
+          <a
+            class="footer__link"
+            href="https://twitter.com/?lang=en"
+            target="_blank"
+          >
+            <img
+              class="footer__image"
+              src="../assets/icons/icon-twitter.png"
+              alt="Twitter icon"
+            />
           </a>
         </div>
       </article>
