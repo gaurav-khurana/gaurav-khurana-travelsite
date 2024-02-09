@@ -21,6 +21,8 @@
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   line-height: 1.5;
+  padding: 0;
+  margin: 0;
 }
 h1 {
   font-size: 3.5rem;
@@ -29,11 +31,10 @@ h1 {
 h2,
 h3,
 .recommendations__title {
-  /* font-size: 3.1rem; */
   font-size: 2.5rem;
 }
 li {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 p,

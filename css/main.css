@@ -21,6 +21,8 @@ body {
   width: 100%;
   height: 7vh;
   background: var(--color-background-secondary);
+  /* position: fixed;
+  top: 0; */
   /* border: 1px solid black; */
 }
 .navbar__list {
@@ -54,7 +56,7 @@ body {
 .footer {
   background-color: var(--color-background-primary);
   width: 100%;
-  height: 25vh;
+  height: 22vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -97,9 +99,9 @@ body {
   /* border: 1px solid black; */
 }
 
-.footer__text--plain {
-  /* border: 1px solid black; */
-}
+/* .footer__text--plain {
+  border: 1px solid black;
+} */
 
 .footer__link-container {
   display: flex;
@@ -111,8 +113,8 @@ body {
   top: 37px;
   /* border-bottom: 1px solid black; */
 }
-.footer__link {
-}
+/* .footer__link {
+} */
 
 .footer__image {
   height: 28px;
