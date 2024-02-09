@@ -17,6 +17,15 @@
 .navbar__link {
   text-decoration: none;
   color: black;
+  transition: 0.3s;
+}
+.navbar__link:hover {
+  background-color: var(--font-color-primary);
+  color: var(--color-background-secondary);
+}
+.navbar__link--logo:hover {
+  background-color: var(--color-background-secondary);
+  color: var(--font-color-secondary);
 }
 .navbar__link--active {
   border-bottom: 2px solid var(--font-color-secondary);
@@ -99,8 +108,12 @@
 
 .footer__image {
   height: 28px;
+  transition: 0.3s;
 }
 
+.footer__image:hover {
+  transform: scale(1.5) rotate(-10deg);
+}
 /* MAIN SECTION */
 .destination-card {
   width: 100%;
