@@ -1,0 +1,51 @@
+/* --color-background-primary: #fefaf5;
+  --color-background-secondary: #ffffff;
+  --font-color-primary: #335576;
+  --font-color-secondary: #db7a4e;
+  --border-radius: 5px; */
+
+/* COLOR SCHEME GUIDELINE
+#FEFAF5 - bkgrnd footer, bkgrnd hero, bkgrnd activities -color-bkgrnd-primary
+#FFFFFF - nav bkgrnd -color-bkgrnd-second
+#335576 - nav logo, slogan color, footer titles +text, recomendation title --font-primary
+#DB7A4E - nav active page, footer subtitles, get started button, -font-second
+ */
+
+/* HEADER NAVIGATION BAR STYLES */
+body {
+  margin: 0;
+}
+
+/* TAKE HEADER NAVBAR STYLES TO GLOBAL.CSS */
+.navbar {
+  width: 100%;
+  height: 7vh;
+  background: var(--color-background-secondary);
+  /* border: 1px solid black; */
+}
+.navbar__list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0 4rem;
+  /* see if we need to increase space from side */
+}
+.navbar__link {
+  text-decoration: none;
+  color: black;
+}
+.navbar__link--active {
+  border-bottom: 2px solid var(--font-color-secondary);
+}
+.navbar__item {
+  margin: 1rem 1rem;
+  padding: 1rem 0;
+  /* border: 1px solid black; */
+}
+.navbar__logo {
+  color: var(--font-color-primary);
+  flex-grow: 1;
+  font-weight: bold;
+}

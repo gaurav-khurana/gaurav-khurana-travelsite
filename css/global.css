@@ -16,6 +16,25 @@
 #DB7A4E - nav active page, footer subtitles, get started button, -font-second
  */
 
+/* TYPOGRAPHY */
+
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h1 {
+  font-size: 4.2rem;
+}
+
+h2,
+h3,
+.recommendations__title {
+  font-size: 3.1rem;
+}
+li {
+  font-size: 1.7rem;
+}
+
+p,
+a {
+  font-size: 1.3rem;
 }
