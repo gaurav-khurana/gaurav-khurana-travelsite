@@ -31,3 +31,71 @@
   flex-grow: 1;
   font-weight: bold;
 }
+
+/* FOOTER - TAKE TO GLOBAL */
+.footer {
+  background-color: var(--color-background-primary);
+  width: 100%;
+  height: 25vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer__card {
+  width: 15%;
+  height: 100%;
+  margin: 0 2rem;
+  padding: 0 1rem;
+  /* border: 1px solid black; */
+}
+.footer__card--large {
+  width: 38%;
+}
+
+.footer__text-container {
+  display: flex;
+  justify-content: flex-start;
+}
+.footer__text-layer {
+  margin-right: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+}
+.footer__title,
+.footer__text--plain {
+  color: var(--font-color-primary);
+}
+/* .footer__title {
+  }
+  /* RESTRUCTRE footer__text IF NOT NEEDED FURTHER */
+/* .footer__text {
+  }  */
+
+.footer__text--subtitle {
+  color: var(--font-color-secondary);
+  font-size: 1rem;
+  /* border: 1px solid black; */
+}
+
+.footer__text--plain {
+  /* border: 1px solid black; */
+}
+
+.footer__link-container {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: ; */
+}
+.footer__link-container--icons {
+  position: relative;
+  top: 37px;
+  /* border-bottom: 1px solid black; */
+}
+.footer__link {
+}
+
+.footer__image {
+  height: 28px;
+}
