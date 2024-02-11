@@ -68,9 +68,9 @@ main {
 
 /* .travel-form__destination {
 } */
-.travel-form__destination-option {
+/* .travel-form__destination-option {
   font-size: 1.5rem;
-}
+} */
 .travel-form__btn-container {
   display: flex;
   justify-content: space-evenly;
@@ -81,7 +81,7 @@ main {
   font-size: 1.5rem;
   display: inline-block;
   width: 7rem;
-  margin: 1rem;
+  margin: 1rem 2rem;
   padding: 1rem;
   outline: 0;
   border: 0;
@@ -94,4 +94,32 @@ main {
   border: 1px solid var(--font-color-secondary);
   box-shadow: 0 0 5px rgba(219, 122, 78, 0.5);
   transform: scale(0.9);
+}
+
+/* AS WEBSITE WAS DESIGNED DESKTOP FIRST APPROACH, I HAVE RETROGRADE APPROACH USING MAX-WIDTH FOR MEDIA QUERIES */
+
+/* FORM SECTION - MEDIA QUERIES */
+@media (max-width: 768px) {
+  .travel-form__form {
+    width: 65vw;
+    max-width: 75vw;
+    /* height: 100%; */
+  }
+  .travel-form__heading {
+    font-size: 3rem;
+  }
+  .travel-form__input,
+  .travel-form__destination {
+    width: 40vw;
+    min-width: 35vw;
+  }
+}
+
+@media (max-width: 1280px) {
+  .travel-form__input,
+  .travel-form__destination {
+    width: 40vw;
+    min-width: 35vw;
+    max-width: 42vw;
+  }
 }
