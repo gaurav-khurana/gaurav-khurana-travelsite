@@ -43,9 +43,6 @@ a {
 }
 
 /* HEADER NAVIGATION BAR STYLES */
-
-/* FROM DESTINATIONS.CSS */
-/* TAKE HEADER NAVBAR STYLES TO GLOBAL.CSS */
 header {
   height: 7vh;
   padding: 20px 0;
@@ -100,7 +97,7 @@ header {
   /* border-left: 1px solid black; */
 }
 
-/* FOOTER - TAKE TO GLOBAL */
+/* FOOTER SECTION */
 .footer {
   background-color: var(--color-background-primary);
   width: 100%;
@@ -172,4 +169,44 @@ header {
 
 .footer__image:hover {
   transform: scale(1.5) rotate(-10deg);
+}
+
+/* AS WEBSITE WAS DESIGNED DESKTOP FIRST APPROACH, I HAVE RETROGRADE APPROACH USING MAX-WIDTH FOR MEDIA QUERIES 
+  mobile < 768px;
+  tablet < 1024px;
+*/
+
+/* MEDIA QUERY FOR FOOTER */
+@media (max-width: 768px) {
+  .footer {
+    height: 90vh;
+    flex-direction: column;
+  }
+  .footer__card {
+    width: 60vw;
+    height: 30%;
+  }
+  .footer__card--large {
+    width: 60vw;
+  }
+  .footer__link-container--icons {
+    max-width: 40vw;
+  }
+}
+@media (max-width: 1024px) {
+  .footer {
+    height: 90vh;
+    flex-direction: column;
+    padding: 0 20%;
+  }
+  .footer__card {
+    width: 50vw;
+    height: 30%;
+  }
+  .footer__card--large {
+    width: 50vw;
+  }
+  .footer__link-container--icons {
+    max-width: 25vw;
+  }
 }
