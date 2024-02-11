@@ -73,3 +73,23 @@
   margin-top: 0;
   margin-bottom: 20px;
 }
+
+/* AS WEBSITE WAS DESIGNED DESKTOP FIRST APPROACH, I HAVE RETROGRADE APPROACH USING MAX-WIDTH FOR MEDIA QUERIES 
+  mobile < 768px;
+  tablet < 1024px;
+*/
+
+/* HERO SECTION - MEDIA QUERIES */
+@media (max-width: 768px) {
+  .destination-card__itinerary-container {
+    width: 25vw;
+    min-width: 20vw;
+  }
+}
+
+@media (max-width: 1024px) {
+  .destination-card__itinerary-container {
+    width: 22vw;
+    max-width: 25vw;
+  }
+}
