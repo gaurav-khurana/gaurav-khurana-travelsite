@@ -1,4 +1,5 @@
 /* HERO SECTION */
+
 .hero {
   background-color: var(--color-background-primary);
   width: 100%;
@@ -7,6 +8,7 @@
   justify-content: space-between;
   padding: 2rem 5rem;
 }
+
 .hero__text-container {
   width: 50%;
   height: 100%;
@@ -15,14 +17,12 @@
   justify-content: center;
   line-height: 1.5;
 }
+
 .hero__heading,
 .hero__text {
   color: var(--font-color-primary);
   margin: 16px;
 }
-/* .hero__heading {}
-
-.hero__text {} */
 
 .hero__link {
   background-color: var(--font-color-secondary);
@@ -36,6 +36,7 @@
   margin: 16px;
   transition: border 0.5s;
 }
+
 .hero__link:hover {
   background-color: var(--color-background-secondary);
   color: var(--font-color-secondary);
@@ -50,58 +51,77 @@
   justify-content: center;
   align-items: center;
   margin: 0;
-  /* border: 1px solid black; */
-}
-.hero__image {
-  width: 35vw;
 }
 
-/* AS WEBSITE WAS DESIGNED DESKTOP FIRST APPROACH, I HAVE RETROGRADE APPROACH USING MAX-WIDTH FOR MEDIA QUERIES 
-  mobile < 768px;
+.hero__image {
+  width: 35vw;
+  transition: 2s ease-in;
+}
+
+.hero__image:hover {
+  transform: perspective(200px) rotateX(-5deg) rotateY(10deg) translate(350px);
+}
+/* scale(1.2) rotateZ(50deg) */
+
+/* AS WEBSITE WAS DESIGNED DESKTOP FIRST APPROACH, 
+  I HAVE RETROGRADE APPROACH USING MAX-WIDTH FOR MEDIA QUERIES 
   tablet < 1024px;
+  mobile < 768px;
 */
 
 /* HERO SECTION - MEDIA QUERIES */
-@media (max-width: 768px) {
-  .hero {
-    height: 80vh;
-  }
-  .hero__text-container {
-    width: 50vw;
-    margin-right: 1.5rem;
-  }
-  .hero__link {
-    width: 23vw;
-    min-width: 20vw;
-  }
-  .hero__image {
-    min-width: 25vw;
-  }
-}
+
 @media (max-width: 1024px) {
   .hero__link {
     width: 17vw;
     max-width: 20vw;
   }
 }
+@media (max-width: 768px) {
+  .hero {
+    height: 80vh;
+  }
+
+  .hero__text-container {
+    width: 50vw;
+    margin-right: 1.5rem;
+  }
+
+  .hero__heading {
+    font-size: 3rem;
+  }
+
+  .hero__link {
+    width: 23vw;
+    min-width: 20vw;
+  }
+
+  .hero__image {
+    min-width: 25vw;
+  }
+}
 
 /* RECOMMENDATIONS SECTION */
+
 .recommendations {
   background-color: var(--color-background-secondary);
   width: 100%;
   height: 50vh;
   padding: 0 5rem;
 }
+
 .recommendations__heading {
   color: var(--font-color-primary);
   margin-bottom: 2rem;
   margin-left: 1rem;
 }
+
 .recommendations-container {
   height: 90%;
   display: flex;
   justify-content: center;
 }
+
 .recommendations__link {
   display: inline-block;
   width: 15vw;
@@ -109,29 +129,31 @@
   text-decoration: none;
   border: 1px solid rgba(0, 0, 0, 20%);
   box-shadow: 0 4px 4px rgba(0, 0, 0, 20%);
-  /* margin: 4rem;
-  margin-top: 1rem; */
   margin: 1rem 2rem 5rem;
   border-radius: var(--border-radius);
   transition: 0.3s;
 }
+
 .recommendations__link:hover {
   transform: scale(1.2);
   border: 0;
   border-radius: 30px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 40%);
 }
+
 .recommendations__link-hawaii {
   background: url(../assets/images/hawaii.jpg);
   background-position: center;
   background-size: cover;
   position: relative;
 }
+
 .recommendations__link-iceland {
   background: url(../assets/images/iceland.jpg);
   background-position: center;
   background-size: cover;
 }
+
 .recommendations__link-greece {
   background: url(../assets/images/greece.jpg);
   background-position: center;
@@ -142,18 +164,20 @@
   font-size: 2.2rem;
   font-weight: bold;
   color: var(--color-background-secondary);
-  /* border-bottom: 5px solid greenyellow; */
 }
+
 .recommendations__title--hawaii {
   position: relative;
   top: 220px;
   left: 97px;
 }
+
 .recommendations__title--iceland {
   position: relative;
   top: 220px;
   left: 88px;
 }
+
 .recommendations__title--greece {
   position: relative;
   top: 220px;
@@ -161,20 +185,17 @@
 }
 
 /* RECOMMENDATIONS SECTION - MEDIA QUERIES */
-@media (max-width: 768px) {
+
+@media (max-width: 1279px) {
   .recommendations {
-    height: 90vh;
+    height: 70vh;
   }
-  .recommendations-container {
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-  }
+
   .recommendations__link {
     height: 50vh;
-    width: 50vh;
-    margin-bottom: 2rem;
+    width: 40vh;
   }
+
   .recommendations__title--hawaii,
   .recommendations__title--iceland,
   .recommendations__title--greece {
@@ -183,19 +204,29 @@
     left: 10px;
   }
 }
-@media (max-width: 1279px) {
+
+@media (max-width: 768px) {
   .recommendations {
-    height: 70vh;
+    height: 90vh;
   }
+
+  .recommendations-container {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
   .recommendations__link {
     height: 50vh;
-    width: 40vh;
+    width: 50vh;
+    margin-bottom: 2rem;
   }
-  .recommendations__title--hawaii,
+
+  /* .recommendations__title--hawaii,
   .recommendations__title--iceland,
   .recommendations__title--greece {
     position: relative;
     top: 28px;
     left: 10px;
-  }
+  } */
 }
