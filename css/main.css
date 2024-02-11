@@ -61,7 +61,6 @@
 .hero__image:hover {
   transform: perspective(200px) rotateX(-5deg) rotateY(10deg) translate(350px);
 }
-/* scale(1.2) rotateZ(50deg) */
 
 /* AS WEBSITE WAS DESIGNED DESKTOP FIRST APPROACH, 
   I HAVE RETROGRADE APPROACH USING MAX-WIDTH FOR MEDIA QUERIES 
@@ -106,7 +105,7 @@
 .recommendations {
   background-color: var(--color-background-secondary);
   width: 100%;
-  height: 50vh;
+  height: 55vh;
   padding: 0 5rem;
 }
 
@@ -124,8 +123,8 @@
 
 .recommendations__link {
   display: inline-block;
-  width: 15vw;
-  height: 35vh;
+  width: 17vw;
+  height: 40vh;
   text-decoration: none;
   border: 1px solid rgba(0, 0, 0, 20%);
   box-shadow: 0 4px 4px rgba(0, 0, 0, 20%);
@@ -168,20 +167,20 @@
 
 .recommendations__title--hawaii {
   position: relative;
-  top: 220px;
-  left: 97px;
+  top: 265px;
+  left: 110px;
 }
 
 .recommendations__title--iceland {
   position: relative;
-  top: 220px;
-  left: 88px;
+  top: 265px;
+  left: 110px;
 }
 
 .recommendations__title--greece {
   position: relative;
-  top: 220px;
-  left: 94px;
+  top: 265px;
+  left: 110px;
 }
 
 /* RECOMMENDATIONS SECTION - MEDIA QUERIES */
@@ -221,12 +220,4 @@
     width: 50vh;
     margin-bottom: 2rem;
   }
-
-  /* .recommendations__title--hawaii,
-  .recommendations__title--iceland,
-  .recommendations__title--greece {
-    position: relative;
-    top: 28px;
-    left: 10px;
-  } */
 }
